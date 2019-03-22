@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>加減乘除</title>
+</head>
+<body>
+	<input type="number" id="MyData" value=1>
+	<input type="number" id="MyData2" value="4">
+<script>
+	var x,y;
+	function add(){
+		x=parseFloat(document.getElementById("MyData").value);
+		y=parseFloat(document.getElementById("MyData2").value);
+		document.getElementById("result").innerHTML= x + y;
+	}
+	function minus(){
+		x=parseFloat(document.getElementById("MyData").value);
+		y=parseFloat(document.getElementById("MyData2").value);
+		document.getElementById("result").innerHTML = x - y;
+	}
+	function times(){
+		x=parseFloat(document.getElementById("MyData").value);
+		y=parseFloat(document.getElementById("MyData2").value);
+		document.getElementById("result").innerHTML= x * y;
+	}
+	function divide(){
+		x=parseFloat(document.getElementById("MyData").value);
+		y=parseFloat(document.getElementById("MyData2").value);
+		document.getElementById("result").innerHTML = x / y;
+	}
+	function clear(){
+		
+	}
+</script>
+	<button onclick="add()">加</button>
+	<button onclick="minus()">減</button>
+	<button onclick="times()">乘</button>
+	<button onclick="divide()">除</button>
+	<button onclick="clear()">清除</button>
+<br>
+	<output id="result"></output>
+</body>
+</html>

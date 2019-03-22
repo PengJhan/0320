@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<p>Input your score and Click the button to display degree</p>
+<input type="number" id="score" value="0">
+<button onclick="myFunction()">Try it</button>
+
+<p id="result"></p>
+
+<script>
+function myFunction() {
+  var score = parseFloat(document.getElementById("score").value); 
+  var respond;
+  if (score >= 60) {
+    respond = "great!!!!";
+  } else {
+    respond = "fighting!!!";
+  }
+  document.getElementById("result").innerHTML = respond;
+}
+</script>
+
+</body>
+</html>
